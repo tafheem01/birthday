@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #ffe6f0, #fff);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Screens */
+.screen {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.card {
+  width: 90%;
+  max-width: 360px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 28px 22px 34px;
+  background: linear-gradient(145deg, #ffffff, #ffe9f2);
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 25px 45px rgba(255,105,135,0.25);
+  z-index: 2;
+}
+
+/* Text */
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #c2185b;
+  margin-bottom: 20px;
+}
+
+h2, h3, p {
+  color: #c2185b;
+  margin-bottom: 18px;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+/* Buttons */
+button {
+  margin-top: 16px;
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  background: #ff6f9e;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Cake */
+.cake {
+  position: relative;
+  width: 150px;
+  height: 170px;
+  margin: 25px auto;
+}
+
+.cake-top,
+.cake-middle,
+.cake-bottom {
+  width: 100%;
+  height: 35px;
+  background: linear-gradient(#ff7aa2, #ff4f7c);
+  border-radius: 14px;
+  margin-bottom: 6px;
+}
+
+.cake-bottom { height: 40px; }
+
+.icing-drip {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 28px;
+  background: #fff1d6;
+  border-radius: 14px;
+}
+
+.candle {
+  width: 10px;
+  height: 30px;
+  background: pink;
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.candle.glow::after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -6px;
+  width: 22px;
+  height: 22px;
+  background: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 25px gold;
+}
+
+/* Balloons */
+.balloons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.balloon {
+  width: 55px;
+  height: 70px;
+  background: radial-gradient(circle at 30% 30%, #fff, #ff9ec4);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Gift */
+.gift {
+  font-size: 80px;
+  cursor: pointer;
+}
+
+/* Message */
+.message-box {
+  min-height: 90px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 12px;
+}
+
+/* 🔴 FALLING ELEMENTS */
+.falling {
+  position: fixed;
+  top: -20px;
+  font-size: 18px;
+  pointer-events: none;
+  animation: fall 4s linear forwards;
+  z-index: 1;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* ❤️ HEART TRAIL */
+.trail-heart {
+  position: fixed;
+  font-size: 16px;
+  pointer-events: none;
+  animation: heartFade 1.2s ease forwards;
+  z-index: 3;
+}
+
+@keyframes heartFade {
+  to {
+    transform: translateY(-30px) scale(0.5);
+    opacity: 0;
+  }
+}

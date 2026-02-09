@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Little Surprise ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Screen 1 -->
+<div class="screen" id="screen-1">
+  <div class="card">
+    <div class="icon">🎁</div>
+    <h2>A little surprise for you…</h2>
+    <button onclick="showScreen(2)">Open It</button>
+  </div>
+</div>
+
+<!-- Screen 2 -->
+<div class="screen" id="screen-2">
+  <div class="card">
+    <h1>HAPPY BIRTHDAY<br>ASIYA FARSEEN 💖</h1>
+    <button onclick="showScreen(3)">Start the Celebration</button>
+  </div>
+</div>
+
+<!-- Screen 3 -->
+<div class="screen" id="screen-3">
+  <div class="card">
+    <div class="cake">
+      <div class="icing-drip"></div>
+      <div class="cake-top"></div>
+      <div class="cake-middle"></div>
+      <div class="cake-bottom"></div>
+      <div class="candle"></div>
+    </div>
+    <button onclick="decorate()">Decorate</button>
+  </div>
+</div>
+
+<!-- Screen 4 -->
+<div class="screen" id="screen-4">
+  <div class="card">
+    <h2>Light the candle 🕯️</h2>
+    <div class="cake">
+      <div class="icing-drip"></div>
+      <div class="cake-top"></div>
+      <div class="cake-middle"></div>
+      <div class="cake-bottom"></div>
+      <div class="candle glow"></div>
+    </div>
+    <button onclick="showScreen(5)">Pop Balloons</button>
+  </div>
+</div>
+
+<!-- Screen 5 -->
+<div class="screen" id="screen-5">
+  <div class="card">
+    <h3>Pop all the balloons 🎈</h3>
+    <div class="balloons">
+      <div class="balloon" onclick="pop(this)"></div>
+      <div class="balloon" onclick="pop(this)"></div>
+      <div class="balloon" onclick="pop(this)"></div>
+      <div class="balloon" onclick="pop(this)"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Screen 6 -->
+<div class="screen" id="screen-6">
+  <div class="card">
+    <h2>A message for you 💌</h2>
+    <div class="message-box"></div>
+    <button onclick="showScreen(7)">Next</button>
+  </div>
+</div>
+
+<!-- Screen 7 -->
+<div class="screen" id="screen-7">
+  <div class="card">
+    <h2>One last thing 🎁</h2>
+    <div class="gift" onclick="showScreen(8)">🎁</div>
+    <p>Tap the gift</p>
+  </div>
+</div>
+
+<!-- Screen 8 -->
+<div class="screen" id="screen-8">
+  <div class="card">
+    <h1>LOTS OF LOVE ❤️</h1>
+    <h2>FROM TAFHEEM</h2>
+    <button onclick="restart()">Repeat</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
